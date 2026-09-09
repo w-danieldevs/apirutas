@@ -4,10 +4,11 @@ import { UserInfo } from './user-info.module';
 
 
 export interface UserApiResponse {
-  acessToken: string;
+  accessToken: string;
   refreshToken: string;
   user: UserInfo;
 }
+
 
 @NgModule({
   declarations: [],
