@@ -1,10 +1,18 @@
+```html
 <div class="login">
 
   <div class="login__container">
 
-    <h1>Iniciar sesión</h1>
+    <div class="login__header">
+      <h1>Iniciar sesión</h1>
+      <p>Accede a tu cuenta para continuar</p>
+    </div>
 
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <form
+      class="login__form"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()"
+    >
 
       <!-- EMAIL -->
       <div class="form-group">
@@ -51,7 +59,7 @@
           id="password"
           type="password"
           formControlName="password"
-          placeholder="Contraseña"
+          placeholder="Ingresa tu contraseña"
         />
 
         @if (
@@ -86,7 +94,14 @@
 
     </form>
 
+    <div class="login__footer">
+      <p>
+        ¿No tienes una cuenta?
+        <a routerLink="/users/create">Registrar usuario</a>
+      </p>
+    </div>
+
   </div>
 
 </div>
-
+```

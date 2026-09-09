@@ -1,8 +1,26 @@
+```html
 <div class="home-container">
-  <h1>Gestión de Usuarios</h1>
-  <nav>
+
+  <header class="home-header">
+    <h1>Gestión de Usuarios</h1>
+    <p>Administra y gestiona los usuarios del sistema</p>
+  </header>
+
+  <nav class="home-nav" aria-label="Navegación principal">
     <ul>
-      <li><a routerLink="../">login</a></li>
-      <li><a routerLink="/users/create">register</a></li>
+      <li>
+        <a routerLink="../">
+          Iniciar sesión
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/users/create">
+          Registrar usuario
+        </a>
+      </li>
     </ul>
   </nav>
+
+</div>
+```
